@@ -1,0 +1,71 @@
+.body-anim{
+    background: linear-gradient(270deg, #ff0000, #0040ff, #74ff00);
+    background-size: 600% 600%;
+
+    -webkit-animation: BodyColorAnim 10s ease infinite;
+    -moz-animation: BodyColorAnim 10s ease infinite;
+    -o-animation: BodyColorAnim 10s ease infinite;
+    animation: BodyColorAnim 10s ease infinite;
+    animation-direction: alternate;
+}
+
+@-webkit-keyframes BodyColorAnim {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes BodyColorAnim {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-o-keyframes BodyColorAnim {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes BodyColorAnim { 
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
+.text-color-anim{
+    -webkit-animation: color-change 10s infinite;
+    -moz-animation: color-change 10s infinite;
+    -o-animation: color-change 10s infinite;
+    -ms-animation: color-change 10s infinite;
+    animation: color-change 10s infinite;
+}
+
+@-webkit-keyframes color-change {
+    0% { color: #ff0000; }
+    33% { color: #0040ff; }
+    66% { color: #74ff00; }
+    100% { color: #ff0000; }
+
+}
+@-moz-keyframes color-change {
+    0% { color: #ff0000; }
+    33% { color: #0040ff; }
+    66% { color: #74ff00; }
+    100% { color: #ff0000; }
+}
+@-ms-keyframes color-change {
+    0% { color: #ff0000; }
+    33% { color: #0040ff; }
+    66% { color: #74ff00; }
+    100% { color: #ff0000; }
+}
+@-o-keyframes color-change {
+    0% { color: #ff0000; }
+    33% { color: #0040ff; }
+    66% { color: #74ff00; }
+    100% { color: #ff0000; }
+}
+@keyframes color-change {
+    0% { color: #ff0000; }
+    33% { color: #0040ff; }
+    66% { color: #74ff00; }
+    100% { color: #ff0000; }
+}
