@@ -1,3 +1,12 @@
+$(document).ready(function(){
+  $(document).on('click', '#toggle-menu', function(){
+    $(this).toggleClass('is-active');
+  })
+});
+
+
+
+
 /**
   -webkit-background-clip: text Polyfill
   

@@ -26,14 +26,14 @@ body{
 }
 #main-navigation > ul > li{
     position: relative; 
-    display: inline;
+    float: right;
     margin-right: 10px;
     padding-top:16px;
 }
 #main-navigation > ul > li::after{
     content: "\00b7";
     position: relative;
-    display: inline;
+    float: right;
     margin-left: 10px;
 }
 #main-navigation > ul > li:first-child::after{
@@ -85,9 +85,6 @@ body{
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
-    #main-navigation > ul > li{
-        float: right;
-    }
     .big-title{
         font-size: 140px;
     }

@@ -6,7 +6,8 @@
         <link rel="stylesheet" href="assets/css/vendor/normalize.css">
         <link rel="stylesheet" href="assets/css/vendor/paper.bootstrap.min.css">
         <link rel="stylesheet" href="assets/font-awesome-4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="assets/css/vendor/animate.css">
+        <link rel="stylesheet" href="assets/css/vendor/animated-hamburgers.min.css">
+        <link rel="stylesheet" href="assets/css/app/animated-hamburger-styles.css">
         <link rel="stylesheet" href="assets/css/app/SimpleBackgroundColorAnim.css">
         <link rel="stylesheet" href="assets/css/vendor/flexbin.css">
         <link rel="stylesheet" href="assets/css/app/styles.css">
@@ -17,11 +18,16 @@
     </head>
     <body id="about">
         <nav id="main-navigation">
-            <ul class="col-xs-12 col-md-push-1 col-md-10">
+            <ul class="hidden-xs col-md-push-1 col-md-10">
                 <li><a href="#contact">Contact</a></li>
                 <li><a href="#portfolio">Portfolio</a></li>
                 <li><a href="#about">About</a></li>
             </ul>
+            <span class="visible-xs pull-right">
+                <button id="toggle-menu" class="c-hamburger c-hamburger--htx">
+                    <span>toggle menu</span>
+                </button>
+            </span>
         </nav>
 
         <section id="" class="content-section row">
