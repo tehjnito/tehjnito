@@ -8,7 +8,6 @@ body{
     padding-top: 50px;
     background-color: #FFF;
     overflow-x: hidden;
-    xheight: 1200px;
 }
 
 #main-navigation{
@@ -69,6 +68,7 @@ body{
     background-clip: text;
     text-shadow: 1px 1px 0 rgba(255,255,255,0.15) , -1px -1px 1px rgba(255,255,255,0.15) ;
     padding:0px;
+    margin-top: -50px;
     /*font-family: 'Open Sans';*/
     font-family: 'Indie Flower', cursive;
     /*font-family: 'Josefin Sans', sans-serif;
