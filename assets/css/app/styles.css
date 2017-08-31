@@ -63,14 +63,20 @@ body{
     font-size: 120px;
     text-align: center;
     font-weight: 700;
-    font-family: 'Open Sans';
     text-transform: capitalize;
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
     background-clip: text;
     text-shadow: 1px 1px 0 rgba(255,255,255,0.15) , -1px -1px 1px rgba(255,255,255,0.15) ;
-    font-family: 'Indie Flower', cursive;
     padding:0px;
+    /*font-family: 'Open Sans';*/
+    font-family: 'Indie Flower', cursive;
+    /*font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Sedgwick Ave Display', cursive;
+    font-family: 'Sedgwick Ave', cursive;*/
+    font-family: 'Amatic SC', cursive;
+    /*font-family: 'Poiret One', cursive;*/
 }
 
 /* Small devices (tablets, 768px and up) */
@@ -83,7 +89,7 @@ body{
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) {
     .big-title{
-        font-size: 180px;
+        font-size: 220px;
         padding:50px;
     }
 }
