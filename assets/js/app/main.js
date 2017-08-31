@@ -1,6 +1,7 @@
 $(document).ready(function(){
   $(document).on('click', '#toggle-menu', function(){
     $(this).toggleClass('is-active');
+    $('body').toggleClass('mobile-menu');
   })
 });
 

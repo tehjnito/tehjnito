@@ -9,7 +9,9 @@ body{
     background-color: #FFF;
     overflow-x: hidden;
 }
-
+body.mobile-menu{
+    overflow: hidden;
+}
 #main-navigation{
     position: fixed;
     top:0;left:0;
@@ -18,6 +20,7 @@ body{
     background-color: rgba(255,255,255,0.8);
     z-index: 99;
 }
+
 #main-navigation > ul{
     position: relative;
     list-style: none;
@@ -44,6 +47,54 @@ body{
     color:#444;
     font-size: 10px;
     text-transform: uppercase;
+}
+.mobile-menu #main-navigation{
+    background-color:transparent;
+}
+
+#mobile-navigation{
+    position: fixed;
+    float:right;
+    top:0;right:0;
+    width: 100vw;
+    min-height: 100vh;
+    transform: translateX(100%);
+    transition: all cubic-bezier(0.6, -0.28, 0.735, 0.045) 0.5s;
+}
+.mobile-menu #mobile-navigation{
+    transform: translateX(10%);
+    transition: all ease-in 0.5s;
+}
+#mobile-navigation > ul{
+    list-style: none;
+    position: relative;
+    float:right;
+    top:0;
+    padding:70px 10% 20px 0px;
+    width:300px;min-height:100vh;
+    background-color: #FFF;
+    border-left: 1px solid rgba(0,0,0,0.08);
+    -webkit-box-shadow: -1px 2px 20px 0px rgba(0,0,0,0.07);
+    -moz-box-shadow: -1px 2px 20px 0px rgba(0,0,0,0.07);
+    box-shadow: -1px 2px 20px 0px rgba(0,0,0,0.07)
+}
+#mobile-navigation > ul > li{
+    position: relative;
+    clear: both;
+    float: left;
+    width:100%;
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+}
+#mobile-navigation > ul > li > a{
+    position: relative;
+    float: left;
+    padding: 10px 35px 10px 5px;
+    width:100%;
+    text-align: right;
+    font-size: 14px;
+    text-transform: uppercase;
+    color:#444;
+    text-decoration: none;
 }
 
 .content-section{
