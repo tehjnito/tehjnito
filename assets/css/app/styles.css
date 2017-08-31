@@ -12,6 +12,21 @@ body{
 body.mobile-menu{
     overflow: hidden;
 }
+#darken{
+    position: fixed;
+    top:0;left:0;
+    width:100vw;height:100vh;
+    display: none;
+    opacity: 0;
+    background-color: rgba(0,0,0,0.6);
+    z-index: 100;
+    transition: all ease-in 0.1s;
+}
+.mobile-menu #darken{
+    display: block;
+    opacity: 1;
+    transition: all ease-in 0.2s; 
+}
 #main-navigation{
     position: fixed;
     top:0;left:0;
@@ -51,16 +66,18 @@ body.mobile-menu{
 }
 .mobile-menu #main-navigation{
     background-color:transparent;
+    z-index: 102;
 }
 
 #mobile-navigation{
     position: fixed;
     float:right;
     top:0;right:0;
-    width: 100vw;
+    width: 120vw;
     min-height: 100vh;
     transform: translateX(100%);
     transition: all cubic-bezier(0.6, -0.28, 0.735, 0.045) 0.5s;
+    z-index: 101;
 }
 .mobile-menu #mobile-navigation{
     transform: translateX(10%);
