@@ -19,6 +19,7 @@ body.mobile-menu{
     padding:5px;
     background-color: rgba(255,255,255,0.8);
     z-index: 99;
+    transition: all ease-in 0.5s;
 }
 
 #main-navigation > ul{
@@ -82,13 +83,13 @@ body.mobile-menu{
     position: relative;
     clear: both;
     float: left;
-    width:100%;
+    width:110%;
     border-bottom: 1px solid rgba(0,0,0,0.05);
 }
 #mobile-navigation > ul > li > a{
     position: relative;
     float: left;
-    padding: 10px 35px 10px 5px;
+    padding: 10px 20% 10px 5px;
     width:100%;
     text-align: right;
     font-size: 14px;
