@@ -14,7 +14,7 @@
   display: block;
   position: relative;
   overflow: hidden;
-  margin: 0 20px 0px 0px;
+  margin: 0 20px 0 0;
   padding: 0;
   width: 40px;
   height: 40px;
@@ -27,7 +27,7 @@
   border-radius: none;
   border: none;
   cursor: pointer;
-  transition: background 0.3s;
+  transition: background 0.15s;
 }
 
 .c-hamburger:focus {
@@ -74,7 +74,7 @@
 }
 
 .c-hamburger--rot span {
-  transition: transform 0.3s;
+  transition: transform 0.15s;
 }
 
 /* active state, i.e. menu open */
@@ -93,17 +93,17 @@
  * down to center and transform into an "x".
  */
 .c-hamburger--htx {
-  background:none;
+  background: none;
 }
 
 .c-hamburger--htx span {
-  transition: background 0s 0.3s;
+  transition: background 0s 0.15s;
 }
 
 .c-hamburger--htx span::before,
 .c-hamburger--htx span::after {
-  transition-duration: 0.3s, 0.3s;
-  transition-delay: 0.3s, 0s;
+  transition-duration: 0.15s, 0.15s;
+  transition-delay: 0.15s, 0s;
 }
 
 .c-hamburger--htx span::before {
@@ -116,7 +116,7 @@
 
 /* active state, i.e. menu open */
 .c-hamburger--htx.is-active {
-  background:none;
+  background: none;
 }
 
 .c-hamburger--htx.is-active span {
@@ -135,7 +135,7 @@
 
 .c-hamburger--htx.is-active span::before,
 .c-hamburger--htx.is-active span::after {
-  transition-delay: 0s, 0.3s;
+  transition-delay: 0s, 0.15s;
 }
 
 /**
@@ -150,17 +150,17 @@
 }
 
 .c-hamburger--htla span {
-  transition: transform 0.3s;
+  transition: transform 0.15s;
 }
 
 .c-hamburger--htla span::before {
   transform-origin: top right;
-  transition: transform 0.3s, width 0.3s, top 0.3s;
+  transition: transform 0.15s, width 0.15s, top 0.15s;
 }
 
 .c-hamburger--htla span::after {
   transform-origin: bottom right;
-  transition: transform 0.3s, width 0.3s, bottom 0.3s;
+  transition: transform 0.15s, width 0.15s, bottom 0.15s;
 }
 
 /* active state, i.e. menu open */
@@ -199,17 +199,17 @@
 }
 
 .c-hamburger--htra span {
-  transition: transform 0.3s;
+  transition: transform 0.15s;
 }
 
 .c-hamburger--htra span::before {
   transform-origin: top left;
-  transition: transform 0.3s, width 0.3s, top 0.3s;
+  transition: transform 0.15s, width 0.15s, top 0.15s;
 }
 
 .c-hamburger--htra span::after {
   transform-origin: bottom left;
-  transition: transform 0.3s, width 0.3s, bottom 0.3s;
+  transition: transform 0.15s, width 0.15s, bottom 0.15s;
 }
 
 /* active state, i.e. menu open */
