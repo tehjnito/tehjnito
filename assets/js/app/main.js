@@ -2,7 +2,11 @@ $(document).ready(function(){
   $(document).on('click', '#toggle-menu', function(){
     $(this).toggleClass('is-active');
     $('body').toggleClass('mobile-menu');
-  })
+  });
+  $('#mobile-navigation > ul > li > a').on('click', function(){
+     $('#toggle-menu').removeClass('is-active');
+     $('body').removeClass('mobile-menu');
+   });
 });
 
 
