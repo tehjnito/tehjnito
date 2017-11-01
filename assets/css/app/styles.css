@@ -150,8 +150,20 @@ body.mobile-menu{
     font-family: 'Amatic SC', cursive;
     /*font-family: 'Poiret One', cursive;*/
 }
-.self-fahwud > h6{
+.self-fahwud{
+    position: relative;
+    float: left;
+    left:50%;
+    transform: translateX(-50%);
+    list-style: none;
+}
+.self-fahwud > li{
+    position:relative;
+    float: left;
+    padding: 20px;
     font-size: 12px;
+    font-weight: bold;
+    opacity: 0.8;
 }
 
 /* Small devices (tablets, 768px and up) */
